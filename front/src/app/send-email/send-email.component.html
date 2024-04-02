@@ -1,0 +1,19 @@
+<h2>Отправить электронную почту</h2>
+<form (submit)="onSubmit()">
+  <label>
+    Электронная почта:
+    <input type="email" [(ngModel)]="email" name="email" required>
+  </label>
+  <br>
+  <label>
+    Тема:
+    <input type="text" [(ngModel)]="subject" name="subject" required>
+  </label>
+  <br>
+  <label>
+    Текст:
+    <textarea [(ngModel)]="text" name="text" required></textarea>
+  </label>
+  <br>
+  <button type="submit">Отправить</button>
+</form>
